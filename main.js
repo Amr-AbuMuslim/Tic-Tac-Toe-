@@ -119,8 +119,8 @@ currentPlayer.textContent = player;
         if (ele.textContent === "") {
           // assign the next player
           ele.textContent = player;
-          currentPlayer.textContent = player;
           player = player == "X" ? "O" : "X";
+          currentPlayer.textContent = player;
           checkWinner();
         }
       }
